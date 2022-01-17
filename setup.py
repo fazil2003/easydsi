@@ -1,4 +1,4 @@
-from setuptools import setup,find_packages
+from setuptools import setup, find_packages
 
 classifiers=[
     'Development Status :: 5 - Production/Stable',
@@ -10,7 +10,7 @@ classifiers=[
 
 setup(
     name = 'easydsi',
-    version = '0.0.2',
+    version = '0.0.9',
     description = 'The library which helps users to implement data structres & algoithms easily without implementing each and every structure.',
     long_description = open('README.md').read() + '\n\n' + open('CHANGELOG.txt').read(),
     long_description_content_type = 'text/markdown',
@@ -21,5 +21,5 @@ setup(
     classifiers = classifiers,
     keywords = 'data-structures, algorithms, data, structures, data structures, data structure',
     packages = find_packages(),
-    install_requires = ['multipledispatch-0.6.0']
+    install_requires = ['multipledispatch==0.6.0']
 )
