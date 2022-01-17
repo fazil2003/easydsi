@@ -1,16 +1,20 @@
 # easydsi 0.0.1
 
-The library which helps users to implement data structres & algoithms easily without implementing everything briefly.
+<p align="center">
+  <img src="./assets/images/logo.png" style='width: 30%;'/>
+</p>
+<br /><br />
 
-<br />
+Python Library makes it easy for users to code and run data structures & algorithms without having to summarize everything.
+<br /><br />
 
-## Contains
-### 🌟 Array
+## 🌟 Contains
+### ✨ Array
 💫 array(size) - Create an array with size. <br />
 💫 array(elements) - Create an array with elements. <br />
 <br />
 
-## Methods
+## 🌟 Methods
 💫 add(position, element) - Add the element in the position. <br />
 💫 remove(position) - Delete the element from the position. <br />
 💫 index(position) - Get the element from the position. <br />
@@ -33,7 +37,7 @@ import easydsi
 ```
 <br />
 
-## 🌟 How to build and upload
+## 🌟 How to build and upload to PyPI
 ```
 pip install setuptools twine
 python setup.py sdist
