@@ -1,4 +1,4 @@
-# easydsi 0.0.1
+# easydsi 0.0.2
 
 <p align="center">
   <img src="./assets/images/logo.png" style='width: 30%;'/>
