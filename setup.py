@@ -21,5 +21,5 @@ setup(
     classifiers = classifiers,
     keywords = 'data-structures, algorithms, data, structures, data structures, data structure',
     packages = find_packages(),
-    install_requires = ['']
+    install_requires = ['multipledispatch-0.6.0']
 )

@@ -10,24 +10,27 @@ class Array():
         return self.elements[position]
 
     def add(self, position, element):
-        if(self.length == 0):
-            self.elements.append(element)
+        if(position >= self.size or position < 0):
+            print("Array Index Out of Bounds")
         else:
-            if(position < self.length):
-                del self.elements[position]
-            self.elements.insert(position, element)
-        self.length += 1
+            if(self.length == 0):
+                self.elements.append(element)
+            else:
+                if(position < self.length):
+                    del self.elements[position]
+                self.elements.insert(position, element)
+            self.length += 1
 
     def remove(self, position):
-        if(position < self.length):
+        if(position >= self.size or position < 0):
+            print("Array Index Out of Bounds")
+        else:
             elementToReturn = self.elements[position]
             del self.elements[position]
             self.elements.insert(position, 0)
             self.length -= 1
             return elementToReturn
-        else:
-            print("Index not found")
-
+            
     def display(self):
         print(self.elements)
 

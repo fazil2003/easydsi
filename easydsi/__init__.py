@@ -1,8 +1,12 @@
 import sys
 sys.path.append(r'D:/Projects/Python/easydsi')
 
-import linear.array.array as a
+from linear.linked_list.linked_list import *
 
-myArr = a.array([4,5,6,7])
-print(myArr.index(3))
-myArr.display()
+li = linked_list([100, 200])
+li.addAtFirst( 5)
+li.addAtLast( 10)
+li.addAtLast( 9)
+li.removeAtLast()
+print(li.getLength())
+print(li.getElements())

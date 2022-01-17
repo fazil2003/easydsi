@@ -10,9 +10,14 @@ Python Library makes it easy for users to code and run data structures & algorit
 
 ## 🌟 Contains
 ### ✨ Array
-💫 array(size) - Create an array with size. <br />
-💫 array(elements) - Create an array with elements. <br />
+💫 array(size) - Creates an array with size. <br />
+💫 array(elements) - Creates an array with elements. <br />
+
+### ✨ Linked List
+💫 linked_list() - Creates an empty linked list. <br />
+💫 linked_list(elements) - Creates an linked list with elements. <br />
 <br />
+
 
 ## 🌟 Methods
 💫 add(position, element) - Add the element in the position. <br />
@@ -21,6 +26,12 @@ Python Library makes it easy for users to code and run data structures & algorit
 💫 display() - Display all the elements. <br />
 💫 getElements() - Get all the elements. <br />
 💫 getLength() - Get the length. <br />
+<br />
+(Specially for Linked List) <br />
+💫 addAtFirst() - Add the element at the first position. <br />
+💫 addAtLast() - Add the element at the last position. <br />
+💫 removeAtFirst() - Remove the element from the first position. <br />
+💫 removeAtLast() - Remove the element from the last position. <br />
 <br />
 
 ## 🌟 How to install
