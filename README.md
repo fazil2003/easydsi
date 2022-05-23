@@ -1,7 +1,7 @@
 # easydsi 0.0.9
 
 <p align="center">
-  <img src="./assets/images/logo.png" style='width: 30%;'/>
+  <img src="./assets/images/logo.png" style='width: 20%;'/>
 </p>
 <br /><br />
 
