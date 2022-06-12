@@ -36,8 +36,8 @@ Python Library makes it easy for users to code and run data structures & algorit
 - <b>remove(position)</b> - Delete the element from the position. <br />
 - <b>index(position)</b> - Get the element from the position. <br />
 - <b>display()</b> - Display all the elements. <br />
-- <b>elements()</b> - Get all the elements. <br />
-- <b>length()</b> - Get the length. <br />
+- <b>get_elements()</b> - Get all the elements. <br />
+- <b>get_length()</b> - Get the length. <br />
 <br />
 
 ## Methods - Specially for Linked List, Double Ended Queue
