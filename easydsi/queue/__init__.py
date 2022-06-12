@@ -5,20 +5,23 @@ class Queue():
     def __init__(self, size, elements):
         self.size = size
         self.elements = elements
-        self.length = len(elements)
+        if(any(self.elements)):
+            self.length = len(elements)
+        else:
+            self.length = 0
     
     def index(self, position):
         return self.elements[position]
 
     def add(self, element):
-        if(self.size == len(self.elements)):
+        if(self.size == self.length):
             print("Queue is full")
         else:
             self.elements.append(element)
             self.length += 1
 
     def remove(self):
-        if(len(self.elements) == 0):
+        if(self.length == 0):
             print("Stack is empty")
         else:
             elementToReturn = self.elements.pop(0)
