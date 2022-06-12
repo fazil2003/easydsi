@@ -10,6 +10,9 @@ class Queue():
         else:
             self.elements = []
             self.length = 0
+
+    def __str__(self):
+        return self.elements
     
     def index(self, position):
         return self.elements[position]

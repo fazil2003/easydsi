@@ -5,6 +5,9 @@ class Array():
         self.size = size
         self.elements = elements
         self.length = len(elements)
+
+    def __str__(self):
+        return self.elements
     
     def index(self, position):
         return self.elements[position]
