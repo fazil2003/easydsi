@@ -1,4 +1,4 @@
-# easyDSI 1.1.3
+# easyDSI 1.1.4
 
 <p align="center">
   <img src="https://aloask.com/assets/images/icon_easydsi.png" style='width: 20%;'/>
@@ -22,7 +22,7 @@ Python Library makes it easy for users to code and run data structures & algorit
 - <b>add(position, element)</b> - Add the element at the position you give. <br />
 - <b>add_first()</b> - Add the element at the first position. <br />
 - <b>add_last()</b> - Add the element at the last position. <br />
-- <b>remove()</b> - Delete the element from the last position. <br />
+- <b>remove()</b> - Delete the element from the first position. <br />
 - <b>remove(position)</b> - Delete the element from the position. <br />
 - <b>remove_first()</b> - Remove the element from the first position. <br />
 - <b>remove_last()</b> - Remove the element from the last position. <br />
