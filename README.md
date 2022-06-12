@@ -1,4 +1,4 @@
-# easydsi 1.0.6
+# easyDSI 1.0.7
 
 <p align="center">
   <img src="https://aloask.com/assets/images/icon_easydsi.png" style='width: 20%;'/>
@@ -57,12 +57,12 @@ pip install easydsi
 ## How to use
 - Import the library in your project.
 ```python
-import easydsi as ds
+import easydsi as dsi
 ```
 
 - Initialize the data structure.
 ```python
-stack = ds.stack([1, 2, 3])
+stack = dsi.stack([1, 2, 3])
 ```
 
 - Use the data structure.

@@ -7,6 +7,6 @@ from easydsi.stack import *
 from easydsi.queue import *
 from easydsi.tree import *
 
-__version__ = "1.0.6"
+__version__ = "1.0.7"
 __developer__ = "Mohamed Fazil Z"
 __website__ = "https://github.com/fazil2003/easydsi"

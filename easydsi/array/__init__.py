@@ -34,13 +34,13 @@ class Array():
     def display(self):
         print(self.elements)
 
-    def elements(self):
+    def get_elements(self):
         return self.elements
     
-    def size(self):
+    def get_size(self):
         return self.size
 
-    def length(self):
+    def get_length(self):
         return self.length
     
 
