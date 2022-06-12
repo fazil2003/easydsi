@@ -1,4 +1,4 @@
-# easyDSI 1.0.9
+# easyDSI 1.1.3
 
 <p align="center">
   <img src="https://aloask.com/assets/images/icon_easydsi.png" style='width: 20%;'/>
@@ -9,42 +9,28 @@ Python Library makes it easy for users to code and run data structures & algorit
 <br /><br />
 
 ## Contains
-### Array
-- <b>array(size)</b> - Creates an array with size. <br />
-- <b>array(elements)</b> - Creates an array with elements. <br />
-
-### Linked List
-- <b>linked_list()</b> - Creates an empty linked list. <br />
-- <b>linked_list(elements)</b> - Creates an linked list with elements. <br />
-
-### Stack
-- <b>stack(size)</b> - Creates an stack with size. <br />
-- <b>stack(elements)</b> - Creates an stack with elements. <br />
 
 ### Queue
-- <b>queue(size)</b> - Creates an queue with size. <br />
-- <b>queue(elements)</b> - Creates an queue with elements. <br />
+- <b>queue()</b> - Creates an empty queue. <br />
+- <b>queue([elements])</b> - Creates an queue with elements. <br />
 
-### Double Ended Queue
-- <b>double_ended_queue(size)</b> - Creates an queue with size. <br />
-- <b>double_ended_queue(elements)</b> - Creates an queue with elements. <br />
 <br />
 
 
 ## Methods
-- <b>add(position, element)</b> - Add the element in the position. <br />
-- <b>remove(position)</b> - Delete the element from the position. <br />
-- <b>index(position)</b> - Get the element from the position. <br />
-- <b>display()</b> - Display all the elements. <br />
-- <b>get_elements()</b> - Get all the elements. <br />
-- <b>get_length()</b> - Get the length. <br />
-<br />
-
-## Methods - Specially for Linked List, Double Ended Queue
+- <b>add(element)</b> - Add the element at the last position. <br />
+- <b>add(position, element)</b> - Add the element at the position you give. <br />
 - <b>add_first()</b> - Add the element at the first position. <br />
 - <b>add_last()</b> - Add the element at the last position. <br />
+- <b>remove()</b> - Delete the element from the last position. <br />
+- <b>remove(position)</b> - Delete the element from the position. <br />
 - <b>remove_first()</b> - Remove the element from the first position. <br />
 - <b>remove_last()</b> - Remove the element from the last position. <br />
+- <b>index(position)</b> - Get the element from the position. <br />
+- <b>display()</b> - Display all the elements. <br />
+- <b>get_elements()</b> - Return all the elements. <br />
+- <b>get_size()</b> - Get the total number of elements. <br />
+
 <br />
 
 ## How to install
@@ -62,13 +48,26 @@ import easydsi as dsi
 
 - Initialize the data structure.
 ```python
-stack = dsi.stack([1, 2, 3])
+queue = dsi.queue([1, 2, 3])
+queue.display()
+```
+> [1, 2, 3]
+
+- Add an element.
+```python
+queue.add(4)
+queue.display()
 ```
 
-- Use the data structure.
+> [1, 2, 3, 4]
+
+- Remove an element.
 ```python
-stack.display()
+queue.remove()
+queue.display()
 ```
+> [1, 2, 3]
+
 <br />
 
 ## How to build and upload to PyPI
