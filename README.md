@@ -1,4 +1,4 @@
-# easyDSI 1.1.4
+# easyDSI 1.1.5
 
 <p align="center">
   <img src="https://aloask.com/assets/images/icon_easydsi.png" style='width: 20%;'/>
@@ -27,6 +27,7 @@ Python Library makes it easy for users to code and run data structures & algorit
 - <b>remove_first()</b> - Remove the element from the first position. <br />
 - <b>remove_last()</b> - Remove the element from the last position. <br />
 - <b>index(position)</b> - Get the element from the position. <br />
+- <b>find(element)</b> - Get the index of the element.<br />
 - <b>display()</b> - Display all the elements. <br />
 - <b>get_elements()</b> - Return all the elements. <br />
 - <b>get_size()</b> - Get the total number of elements. <br />

@@ -13,8 +13,23 @@ class Queue():
     def __repr__(self):
         return str(self.elements)
     
+    # Find the element on the index
     def index(self, position):
-        return self.elements[position]
+        if(position >= self.size or position < 0):
+            print("Index out of Range")
+        else:
+            return self.elements[position]
+            
+    # Find the index of the element
+    def find(self, element):
+        try:
+            position = self.elements.index(element)
+        except ValueError:
+            print("Value not present.")
+            position = -1
+        
+        return position
+
 
     @dispatch(int, int)
     def add(self, position, element):
