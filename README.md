@@ -1,4 +1,4 @@
-# easydsi 1.0.2
+# easydsi 1.0.5
 
 <p align="center">
   <img src="https://aloask.com/assets/images/icon_easydsi.png" style='width: 20%;'/>
@@ -24,6 +24,10 @@ Python Library makes it easy for users to code and run data structures & algorit
 ### Queue
 - queue(size) - Creates an queue with size. <br />
 - queue(elements) - Creates an queue with elements. <br />
+
+### Double Ended Queue
+- double_ended_queue(size) - Creates an queue with size. <br />
+- double_ended_queue(elements) - Creates an queue with elements. <br />
 <br />
 
 
@@ -35,8 +39,8 @@ Python Library makes it easy for users to code and run data structures & algorit
 - getElements() - Get all the elements. <br />
 - getLength() - Get the length. <br />
 <br />
-(Specially for Linked List) <br />
 
+## Methods - Specially for Linked List, Double Ended Queue
 - addAtFirst() - Add the element at the first position. <br />
 - addAtLast() - Add the element at the last position. <br />
 - removeAtFirst() - Remove the element from the first position. <br />
@@ -51,9 +55,19 @@ pip install easydsi
 <br />
 
 ## How to use
-- Import the library in your project
+- Import the library in your project.
 ```python
-import easydsi
+import easydsi as ds
+```
+
+- Initialize the data structure.
+```python
+stack = ds.stack([1, 2, 3])
+```
+
+- Use the data structure.
+```python
+stack.display()
 ```
 <br />
 

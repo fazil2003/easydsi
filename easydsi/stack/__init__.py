@@ -8,6 +8,7 @@ class Stack():
         if(any(self.elements)):
             self.length = len(elements)
         else:
+            self.elements = []
             self.length = 0
     
     def index(self, position):
@@ -15,14 +16,14 @@ class Stack():
 
     def add(self, element):
         if(self.size == self.length):
-            print("Stack is full")
+            print("Stack is full. Cannot add element ", element)
         else:
             self.elements.append(element)
             self.length += 1
 
     def remove(self):
         if(self.length == 0):
-            print("Stack is empty")
+            print("Stack is empty. Cannot remove an element.")
         else:
             elementToReturn = self.elements.pop()
             self.length -= 1

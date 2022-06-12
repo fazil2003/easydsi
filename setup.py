@@ -10,8 +10,8 @@ classifiers=[
 
 setup(
     name = 'easydsi',
-    version = '1.0.2',
-    description = 'The library which helps users to implement data structres & algoithms easily without implementing each and every structure.',
+    version = '1.0.5',
+    description = 'The library which helps developers to implement data structures & algorithms easily without coding everything.',
     long_description = open('README.md').read() + '\n\n' + open('CHANGELOG.txt').read(),
     long_description_content_type = 'text/markdown',
     url = 'https://github.com/fazil2003/easydsi',
