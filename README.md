@@ -1,4 +1,4 @@
-# easydsi 1.0.5
+# easydsi 1.0.6
 
 <p align="center">
   <img src="https://aloask.com/assets/images/icon_easydsi.png" style='width: 20%;'/>
@@ -36,15 +36,15 @@ Python Library makes it easy for users to code and run data structures & algorit
 - <b>remove(position)</b> - Delete the element from the position. <br />
 - <b>index(position)</b> - Get the element from the position. <br />
 - <b>display()</b> - Display all the elements. <br />
-- <b>getElements()</b> - Get all the elements. <br />
-- <b>getLength()</b> - Get the length. <br />
+- <b>elements()</b> - Get all the elements. <br />
+- <b>length()</b> - Get the length. <br />
 <br />
 
 ## Methods - Specially for Linked List, Double Ended Queue
-- <b>addAtFirst()</b> - Add the element at the first position. <br />
-- <b>addAtLast()</b> - Add the element at the last position. <br />
-- <b>removeAtFirst()</b> - Remove the element from the first position. <br />
-- <b>removeAtLast()</b> - Remove the element from the last position. <br />
+- <b>add_first()</b> - Add the element at the first position. <br />
+- <b>add_last()</b> - Add the element at the last position. <br />
+- <b>remove_first()</b> - Remove the element from the first position. <br />
+- <b>remove_last()</b> - Remove the element from the last position. <br />
 <br />
 
 ## How to install

@@ -10,7 +10,7 @@ classifiers=[
 
 setup(
     name = 'easydsi',
-    version = '1.0.5',
+    version = '1.0.6',
     description = 'The library which helps developers to implement data structures & algorithms easily without coding everything.',
     long_description = open('README.md').read() + '\n\n' + open('CHANGELOG.txt').read(),
     long_description_content_type = 'text/markdown',
@@ -21,5 +21,5 @@ setup(
     classifiers = classifiers,
     keywords = 'data-structures, algorithms, data, structures, data structures, data structure',
     packages = find_packages(),
-    install_requires = ['multipledispatch==0.6.0']
+    install_requires = ['multipledispatch==0.6.0', 'binarytree==6.5.1']
 )

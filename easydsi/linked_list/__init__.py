@@ -23,12 +23,12 @@ class LinkedList():
         self.size += 1
         self.length += 1
 
-    def addAtFirst(self, element):
+    def add_first(self, element):
         self.elements.insert(0, element)
         self.size += 1
         self.length += 1
 
-    def addAtLast(self, element):
+    def add_last(self, element):
         self.elements.append(element)
         self.size += 1
         self.length += 1
@@ -46,13 +46,13 @@ class LinkedList():
         else:
             print("List Index Out of Bounds")
 
-    def removeAtFirst(self):
+    def remove_first(self):
         if(self.length > 0):
             del self.elements[0]
             self.size -= 1
             self.length -= 1
 
-    def removeAtLast(self):
+    def remove_last(self):
         if(self.length > 0):
             del self.elements[-1]
             self.size -= 1
@@ -61,13 +61,13 @@ class LinkedList():
     def display(self):
         print(self.elements)
 
-    def getElements(self):
+    def elements(self):
         return self.elements
     
-    def getSize(self):
+    def size(self):
         return self.size
 
-    def getLength(self):
+    def length(self):
         return self.length
     
 

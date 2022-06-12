@@ -32,13 +32,13 @@ class Queue():
     def display(self):
         print(self.elements)
 
-    def getElements(self):
+    def elements(self):
         return self.elements
     
-    def getSize(self):
+    def size(self):
         return self.size
 
-    def getLength(self):
+    def length(self):
         return self.length
 
 class DoubleEndedQueue(Queue):
@@ -46,28 +46,28 @@ class DoubleEndedQueue(Queue):
     def __init__(self, size, elements):
         super().__init__(size, elements)
 
-    def addAtFirst(self, element):
+    def add_first(self, element):
         if(self.size == self.length):
             print("Queue is full. Cannot add element ", element)
         else:
             self.elements.insert(0, element)
             self.length += 1
 
-    def addAtLast(self, element):
+    def add_last(self, element):
         if(self.size == self.length):
             print("Queue is full. Cannot add element ", element)
         else:
             self.elements.append(element)
             self.length += 1
 
-    def removeAtFirst(self):
+    def remove_first(self):
         if(self.length == 0):
             print("Queue is empty. Cannot remove an element.")
         else:
             del self.elements[0]
             self.length -= 1
 
-    def removeAtLast(self):
+    def remove_last(self):
         if(self.length == 0):
             print("Queue is empty. Cannot remove an element.")
         else:
