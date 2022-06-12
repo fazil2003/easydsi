@@ -1,4 +1,4 @@
-# easyDSI 1.0.7
+# easyDSI 1.0.9
 
 <p align="center">
   <img src="https://aloask.com/assets/images/icon_easydsi.png" style='width: 20%;'/>

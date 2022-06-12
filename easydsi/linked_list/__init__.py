@@ -9,7 +9,10 @@ class LinkedList():
         self.length = len(elements)
 
     def __str__(self):
-        return self.elements
+        return str(self.elements)
+
+    def __repr__(self):
+        return str(self.elements)
     
     def index(self, position):
         return self.elements[position]
