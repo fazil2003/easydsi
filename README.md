@@ -10,45 +10,45 @@ Python Library makes it easy for users to code and run data structures & algorit
 
 ## Contains
 ### Array
-- array(size) - Creates an array with size. <br />
-- array(elements) - Creates an array with elements. <br />
+- <b>array(size)</b> - Creates an array with size. <br />
+- <b>array(elements)</b> - Creates an array with elements. <br />
 
 ### Linked List
-- linked_list() - Creates an empty linked list. <br />
-- linked_list(elements) - Creates an linked list with elements. <br />
+- <b>linked_list()</b> - Creates an empty linked list. <br />
+- <b>linked_list(elements)</b> - Creates an linked list with elements. <br />
 
 ### Stack
-- stack(size) - Creates an stack with size. <br />
-- stack(elements) - Creates an stack with elements. <br />
+- <b>stack(size)</b> - Creates an stack with size. <br />
+- <b>stack(elements)</b> - Creates an stack with elements. <br />
 
 ### Queue
-- queue(size) - Creates an queue with size. <br />
-- queue(elements) - Creates an queue with elements. <br />
+- <b>queue(size)</b> - Creates an queue with size. <br />
+- <b>queue(elements)</b> - Creates an queue with elements. <br />
 
 ### Double Ended Queue
-- double_ended_queue(size) - Creates an queue with size. <br />
-- double_ended_queue(elements) - Creates an queue with elements. <br />
+- <b>double_ended_queue(size)</b> - Creates an queue with size. <br />
+- <b>double_ended_queue(elements)</b> - Creates an queue with elements. <br />
 <br />
 
 
 ## Methods
-- add(position, element) - Add the element in the position. <br />
-- remove(position) - Delete the element from the position. <br />
-- index(position) - Get the element from the position. <br />
-- display() - Display all the elements. <br />
-- getElements() - Get all the elements. <br />
-- getLength() - Get the length. <br />
+- <b>add(position, element)</b> - Add the element in the position. <br />
+- <b>remove(position)</b> - Delete the element from the position. <br />
+- <b>index(position)</b> - Get the element from the position. <br />
+- <b>display()</b> - Display all the elements. <br />
+- <b>getElements()</b> - Get all the elements. <br />
+- <b>getLength()</b> - Get the length. <br />
 <br />
 
 ## Methods - Specially for Linked List, Double Ended Queue
-- addAtFirst() - Add the element at the first position. <br />
-- addAtLast() - Add the element at the last position. <br />
-- removeAtFirst() - Remove the element from the first position. <br />
-- removeAtLast() - Remove the element from the last position. <br />
+- <b>addAtFirst()</b> - Add the element at the first position. <br />
+- <b>addAtLast()</b> - Add the element at the last position. <br />
+- <b>removeAtFirst()</b> - Remove the element from the first position. <br />
+- <b>removeAtLast()</b> - Remove the element from the last position. <br />
 <br />
 
 ## How to install
-- Go to your command prompt and type the following command.
+- Open your command prompt and enter the below command.
 ```
 pip install easydsi
 ```
