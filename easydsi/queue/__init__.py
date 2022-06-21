@@ -130,7 +130,7 @@ class Queue():
         if(minimum_value == float('INF')):
             minimum_value = "No integer is present."
         return minimum_value
-    
+
     # Get the sum of all the elements from the queue
     def get_sum(self):
         sum_value = 0
@@ -138,6 +138,19 @@ class Queue():
             if(isinstance(element, int)):
                 sum_value += element
         return sum_value
+
+    # Get the average of all the elements from the queue
+    def get_avg(self):
+        sum_value = 0
+        count_value = 0
+        for element in self.elements:
+            if(isinstance(element, int)):
+                sum_value += element
+                count_value += 1
+        avg_value = 0
+        if(count_value != 0):
+            avg_value = sum_value/count_value
+        return avg_value
 
     # Reverse the queue
     def reverse(self, inplace = False):

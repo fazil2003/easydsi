@@ -1,11 +1,12 @@
 Change Log
 =========
 
-1.1.7 (21/06/2022)
+1.1.8 (21/06/2022)
 -------------------
 Added Functions:
 - get_max()
 - get_min()
 - get_sum()
+- get_avg()
 - reverse()
 - sort()
