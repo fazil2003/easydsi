@@ -1,12 +1,10 @@
 Change Log
 =========
 
-1.1.8 (21/06/2022)
+1.2.0 (10/08/2022)
 -------------------
-Added Functions:
-- get_max()
-- get_min()
-- get_sum()
-- get_avg()
-- reverse()
-- sort()
+New Features:
+- Binary Tree
+- Binary Search Tree
+- Min Heap
+- Max Heap

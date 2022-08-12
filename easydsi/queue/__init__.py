@@ -4,12 +4,27 @@ class Queue():
     def __init__(self, elements):
         self.size = len(elements)
         self.elements = elements
+        
+        # Settings
+        self.visualize = False
+        self.set_maximum_size = float('INF')
+        self.set_allow_str = True
 
     def __str__(self):
         return str(self.elements)
 
     def __repr__(self):
         return str(self.elements)
+
+    # Settings of the queue
+    def set(
+        self,
+        maximum_size = float('INF'),
+        allow_str = True
+        ):
+        self.set_maximum_size = maximum_size
+        self.set_allow_str = allow_str
+        pass
     
     # Find the element on the index
     def index(self, position):
@@ -30,6 +45,17 @@ class Queue():
 
     # Add the element to the queue
     def add(self, position = -1, element = None):
+
+        # CHECK SETTINGS
+        # Maximum size
+        if(self.set_maximum_size != float('INF')):
+            if(self.size >= self.set_maximum_size):
+                return "Maximum size exceeded."
+        
+        # Allow Str
+        if(not self.set_allow_str):
+            if(isinstance(element, str)):
+                return "String is not allowed."
 
         # If no element is given, but position is given, then take position as element
         if(element == None and position!=-1):
@@ -53,6 +79,7 @@ class Queue():
                 self.size += (position - self.size) 
             else:
                 self.elements.insert(position, element)
+
         self.size += 1
 
     # Add the element in the position and remove the other element
@@ -74,6 +101,7 @@ class Queue():
             if(position < self.size):
                 del self.elements[position]
             self.elements.insert(position, element)
+
         self.size += 1
 
 
@@ -89,10 +117,11 @@ class Queue():
             print("Index Out of Range")
             return -1
         else:
-            elementToReturn = self.elements[position]
+            element_to_return = self.elements[position]
             self.elements.pop(position)
             self.size -= 1
-            return elementToReturn
+
+            return element_to_return
 
     def remove_first(self):
         return self.remove(0)
@@ -157,7 +186,7 @@ class Queue():
         reversed_elements = []
         for element in self.elements[::-1]:
             reversed_elements.append(element)
-        if(inplace == True):
+        if(inplace):
             self.elements = reversed_elements
         return reversed_elements
 
@@ -178,11 +207,24 @@ class Queue():
         sorted_elements.extend(sorted_numbers)
         sorted_elements.extend(sorted_strings)
         # Convert to descending
-        if(desc == True):
+        if(desc):
             sorted_elements = list(reversed(sorted_elements))
-        if(inplace == True):
+        if(inplace):
             self.elements = sorted_elements
         return sorted_elements
+
+    # Map all the values to the function
+    def map(self, function = None, inplace = False):
+        if(not function):
+            print("Function parameter is missing.")
+            return None
+        mapped_elements = []
+        for element in self.elements:
+            value = function(element)
+            mapped_elements.append(value)
+        if(inplace):
+            self.elements = mapped_elements
+        return mapped_elements
 
 
 # CREATE A QUEUE

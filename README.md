@@ -1,4 +1,4 @@
-# easyDSI 1.1.8
+# easyDSI 1.2.0
 
 <p align="center">
   <img src="https://aloask.com/assets/images/icon_easydsi.png" style='width: 20%;'/>
@@ -37,6 +37,7 @@ Python Library makes it easy for users to code and run data structures & algorit
 - <b>get_avg()</b> - Get the average of the elements from the queue. <br />
 - <b>reverse(inplace=False)</b> - Reverse the queue. <br />
 - <b>sort(desc=False, inplace=False)</b> - Sort the queue. <br />
+- <b>map(function, inplace=False)</b> - Map all the elements to the function. <br />
 
 <br />
 

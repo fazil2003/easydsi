@@ -1,2 +1,4 @@
 dist/
 easydsi.egg-info/
+
+test.py
