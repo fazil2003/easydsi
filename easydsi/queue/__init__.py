@@ -1,14 +1,28 @@
+import sys
+import time
+
 class Queue():
 
     # Initialize
-    def __init__(self, elements):
+    def __init__(self, elements, visualize):
+
+        start_time = time.time()
+
         self.size = len(elements)
         self.elements = elements
         
         # Settings
-        self.visualize = False
+        self.visualize = visualize
+        self.visualize_count = 0
         self.set_maximum_size = float('INF')
         self.set_allow_str = True
+
+        end_time = time.time()
+        time_taken = end_time - start_time
+
+        if self.visualize:
+            self.display_visualize_message("Queue has been created with the elements: " + str(elements), time_taken)
+            
 
     def __str__(self):
         return str(self.elements)
@@ -16,12 +30,36 @@ class Queue():
     def __repr__(self):
         return str(self.elements)
 
+    def display_visualize_message(self, message, time_taken):
+        self.visualize_count += 1
+        print(self.visualize_count, " - " , message)
+        for index, element in enumerate(self.elements):
+            if self.size == 1:
+                print("Front <- | ", end = "")
+                print(str(element), end = "")
+                print(" | <- Rear", end = "")
+                print()
+            elif index == 0:
+                print("Front <- | ", end = "")
+                print(str(element), end = "")
+            elif index == self.size - 1:
+                print(" | " + str(element), end = "")
+                print(" | <- Rear", end = "")
+                print()
+            else:
+                print(" | " + str(element), end = "")
+
+        print("Memory Usage: " + str(sys.getsizeof(self.elements)))
+        print("Time Taken: " + str(time_taken))
+
     # Settings of the queue
     def set(
         self,
+        visualize = False,
         maximum_size = float('INF'),
         allow_str = True
         ):
+        self.visualize = visualize
         self.set_maximum_size = maximum_size
         self.set_allow_str = allow_str
         pass
@@ -31,12 +69,24 @@ class Queue():
         if(position >= self.size or position < 0):
             print("Index out of Range")
         else:
+
+            if self.visualize:
+                self.display_visualize_message("Element at the position: " + str(position) + " is " + str(self.elements[position]))
+
             return self.elements[position]
             
     # Find the index of the element
     def find(self, element):
         try:
+
+            start_time = time.time()
             position = self.elements.index(element)
+            end_time = time.time()
+            time_taken = end_time - start_time
+
+            if self.visualize:
+                self.display_visualize_message("The element " + str(element) + " is found at the position: " + str(position), time_taken)
+
         except ValueError:
             print("Value not present.")
             position = -1
@@ -45,6 +95,8 @@ class Queue():
 
     # Add the element to the queue
     def add(self, position = -1, element = None):
+
+        start_time = time.time()
 
         # CHECK SETTINGS
         # Maximum size
@@ -79,8 +131,14 @@ class Queue():
                 self.size += (position - self.size) 
             else:
                 self.elements.insert(position, element)
-
         self.size += 1
+
+        end_time = time.time()
+        time_taken = end_time - start_time
+
+        if self.visualize and element is not None:
+            self.display_visualize_message("The element " + str(element) + " is inserted in the position: " + str(position), time_taken)
+
 
     # Add the element in the position and remove the other element
     def add_and_remove(self, position = -1, element = None):
@@ -228,5 +286,5 @@ class Queue():
 
 
 # CREATE A QUEUE
-def queue(elements = []):
-    return Queue(elements)
+def queue(elements = [], visualize = False):
+    return Queue(elements, visualize)
