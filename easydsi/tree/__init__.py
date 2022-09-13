@@ -1,4 +1,5 @@
 # Import the libraries
+from ast import Delete
 from binarytree import bst, Node, build, tree
 
 class Tree():
@@ -37,51 +38,55 @@ class Tree():
                     queue.append(curr_node.left)
                     queue.append(curr_node.right)
     
+    # Used in remove function
+    # function to delete the given deepest node (d_node) in binary tree
+    def deleteDeepest(self, d_node):
+        q = []
+        q.append(self.root)
+        while(len(q)):
+            temp = q.pop(0)
+            if temp is d_node:
+                temp = None
+                return
+            if temp.right:
+                if temp.right is d_node:
+                    temp.right = None
+                    return
+                else:
+                    q.append(temp.right)
+            if temp.left:
+                if temp.left is d_node:
+                    temp.left = None
+                    return
+                else:
+                    q.append(temp.left)
+    
+    # function to delete element in binary tree
     def remove(self, value):
-
-        queue = []
-        queue.append(self.root)
-
-        if self.root is None:
+        if self.root == None :
             return None
-
-        elif self.root.value == value:
-            if self.root.left is None:
-                self.root.right.left = self.root.left
-                self.root = self.root.right
-            elif self.root.right is None:
-                self.root.left.right = self.root.right
-                self.root = self.root.left
-            else:
-                self.root.right.left = self.root.left
-                self.root = self.root.right
-        else:
-
-            while(len(queue) > 0):
-                curr_node = queue.pop(0)
-
-                if curr_node.left is not None:
-                    if curr_node.left.value == value:
-                        if curr_node.left.right is not None:
-                            curr_node.left.right.left = curr_node.left.left
-                            curr_node.left = curr_node.left.right
-                        else:
-                            curr_node.left.left.right = curr_node.left.right
-                            curr_node.left = curr_node.left.left
-                        break
-                    else:
-                        queue.append(curr_node.left)
-                if curr_node.right is not None:
-                    if curr_node.right.value == value:
-                        if curr_node.right.right is not None:
-                            curr_node.right.right.left = curr_node.right.left
-                            curr_node.right = curr_node.right.right
-                        else:
-                            curr_node.right.left.right = curr_node.right.right
-                            curr_node.right = curr_node.right.left
-                        break
-                    else:
-                        queue.append(curr_node.right)
+        if self.root.left == None and self.root.right == None:
+            if self.root.value == value :
+                return None
+            else :
+                return self.root
+        value_node = None
+        q = []
+        q.append(self.root)
+        temp = None
+        while(len(q)):
+            temp = q.pop(0)
+            if temp.value == value:
+                value_node = temp
+            if temp.left:
+                q.append(temp.left)
+            if temp.right:
+                q.append(temp.right)
+        if value_node :
+            x = temp.value
+            self.deleteDeepest(temp)
+            value_node.value = x
+        return self.root
             
     # Getting list of nodes
     def get_nodes(self):
@@ -157,7 +162,6 @@ class BinarySearchTree(Tree):
                                 curr_node = curr_node.right
     
 
-
     def add(self, value):
         if self.root is None:
             self.root = Node(value)
@@ -180,55 +184,65 @@ class BinarySearchTree(Tree):
                     else:
                         curr_node = curr_node.right
     
-    def remove(self, value):
-        if self.root is None:
-            return None
-        elif self.root.value == value:
-            if self.root.left is None:
-                self.root.right.left = self.root.left
-                self.root = self.root.right
-            elif self.root.right is None:
-                self.root.left.right = self.root.right
-                self.root = self.root.left
-            else:
-                self.root.right.left = self.root.left
-                self.root = self.root.right
+     
+    # Used in remove function
+    def minValueNode(node):
+        current = node
+    
+        # loop down to find the leftmost leaf
+        while(current.left is not None):
+            current = current.left
+    
+        return current
+
+    def delete(self, root, value):
+        # Base Case
+        if root is None:
+            return root
+    
+        # If the value to be deleted 
+        # is smaller than the root's
+        # value then it lies in  left subtree
+        if value < root.value:
+            root.left = self.delete(root.left, value)
+    
+        # If the kye to be delete 
+        # is greater than the root's value
+        # then it lies in right subtree
+        elif(value > root.value):
+            root.right = self.delete(root.right, value)
+    
+        # If value is same as root's value, then this is the node
+        # to be deleted
         else:
-            curr_node = self.root
+    
+            # Node with only one child or no child
+            if root.left is None:
+                temp = root.right
+                root = None
+                return temp
+    
+            elif root.right is None:
+                temp = root.left
+                root = None
+                return temp
+    
+            # Node with two children: 
+            # Get the inorder successor
+            # (smallest in the right subtree)
+            temp = self.minValueNode(root.right)
+    
+            # Copy the inorder successor's 
+            # content to this node
+            root.value = temp.value
+    
+            # Delete the inorder successor
+            root.right = self.delete(root.right, temp.value)
+    
+        return root
 
-            parent_node = curr_node
-
-            # 0 - left, 1 - right
-            side = 0
-
-            while True:
-                if curr_node is None:
-                    break
-                elif value == curr_node.value:
-                    if side == 0:
-                        if curr_node.right is None:
-                            parent_node.left = curr_node.left
-                        elif curr_node.left is None:
-                            parent_node.left = curr_node.right
-                        else:
-                            curr_node
-                            parent_node.left = curr_node.right
-                    else:
-                        if curr_node.right is None:
-                            parent_node.right = curr_node.left
-                        elif curr_node.left is None:
-                            parent_node.right = curr_node.right
-                        else:
-                            parent_node.right = curr_node.right
-                    break
-                elif value < curr_node.value:
-                    parent_node = curr_node
-                    curr_node = curr_node.left
-                    side = 0
-                elif value > curr_node.value:
-                    parent_node = curr_node
-                    curr_node = curr_node.right
-                    side = 1
+    def remove(self, value):
+        self.root = self.delete(self.root, value)
 
 
 def binary_tree(data = []):
@@ -236,3 +250,10 @@ def binary_tree(data = []):
 
 def binary_search_tree(data = []):
     return BinarySearchTree(data)
+
+tree = binary_search_tree([8, 6,2, 18, 24, 3, 19])
+print(tree)
+tree.remove(18)
+print(tree)
+tree.remove(2)
+print(tree)
