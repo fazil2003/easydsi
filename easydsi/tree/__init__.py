@@ -93,7 +93,7 @@ class Tree():
         return list(self.root)
 
     # Getting list of values
-    def get_values(self):
+    def get_elements(self):
         return self.root.values
   
     # Getting inorder of nodes
@@ -244,6 +244,8 @@ class BinarySearchTree(Tree):
     def remove(self, value):
         self.root = self.delete(self.root, value)
 
+def tree(data = []):
+    return BinaryTree(data)
 
 def binary_tree(data = []):
     return BinaryTree(data)
@@ -251,9 +253,5 @@ def binary_tree(data = []):
 def binary_search_tree(data = []):
     return BinarySearchTree(data)
 
-tree = binary_search_tree([8, 6,2, 18, 24, 3, 19])
-print(tree)
-tree.remove(18)
-print(tree)
-tree.remove(2)
-print(tree)
+t = tree([3,4,5,2,4,8])
+print(t.get_size())

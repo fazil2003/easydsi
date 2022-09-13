@@ -15,10 +15,10 @@ class MinHeap():
     def remove(self):
         return heapq.heappop(self.root)
 
-    def get_largest(self, count = 1):
+    def get_max(self, count = 1):
         return heapq.nlargest( count, self.root)
 
-    def get_smallest(self, count = 1):
+    def get_min(self, count = 1):
         return heapq.nsmallest( count, self.root)
 
     def display(self):
