@@ -252,6 +252,3 @@ def binary_tree(data = []):
 
 def binary_search_tree(data = []):
     return BinarySearchTree(data)
-
-t = tree([3,4,5,2,4,8])
-print(t.get_size())
