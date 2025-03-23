@@ -83,3 +83,23 @@ Uninstall and reinstall for testing:
 pip uninstall easydsi -y
 pip install easydsi
 ```
+
+### 🔄 Legacy Method (Old Approach)
+#### 📦 Build Source Distribution
+```sh
+pip install setuptools twine
+python setup.py sdist
+```
+Upload to PyPI:
+```sh
+twine upload --repository-url https://upload.pypi.org/legacy/ dist/*
+```
+#### 📦 Build Wheel File
+```sh
+pip install setuptools wheel
+python setup.py bdist_wheel
+```
+Upload:
+```sh
+twine upload dist/*
+```
