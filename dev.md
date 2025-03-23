@@ -19,6 +19,11 @@ Before publishing, test the package by installing it locally:
 pip install ./dist/easydsi-1.2.2-py3-none-any.whl
 ```
 
+### 🧪 Run the unit tests
+```sh
+python -m unittest discover tests
+```
+
 ### ✅ Verify the Installation
 Ensure the package is installed correctly:
 ```python
