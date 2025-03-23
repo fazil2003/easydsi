@@ -70,27 +70,33 @@
 ### 🛠️ Initialization
 - **`queue()`** or **`queue([list])`** - Creates a queue.
 
-### ✨ Methods
-- `add(element)` - Add an element at the last position.
-- `add(position, element)` - Insert an element at a given position.
-- `add_first()` - Add an element at the first position.
-- `add_last()` - Add an element at the last position.
-- `remove()` - Remove the first element.
-- `remove(position)` - Remove an element at a given position.
-- `remove_first()` - Remove the first element.
-- `remove_last()` - Remove the last element.
-- `index(position)` - Get the element at a position.
-- `find(element)` - Find the index of an element.
-- `display()` - Display all elements.
-- `get_elements()` - Return all elements.
-- `get_size()` - Get the total number of elements.
-- `get_max()` - Get the maximum element.
-- `get_min()` - Get the minimum element.
-- `get_sum()` - Get the sum of all elements.
-- `get_avg()` - Get the average of elements.
-- `reverse(inplace=False)` - Reverse the queue.
-- `sort(desc=False, inplace=False)` - Sort the queue.
-- `map(function, inplace=False)` - Apply a function to all elements.
+This module provides utility functions for performing various operations on a `Queue` object, including retrieving statistics, sorting, reversing, and clearing the queue.
+
+### 📌 Methods and Descriptions
+
+- `get_max(queue, visualize=False)`  
+  Returns the maximum numerical value in the queue.  
+
+- `get_min(queue, visualize=False)`  
+  Returns the minimum numerical value in the queue.  
+
+- `get_sum(queue, visualize=False)`  
+  Computes the sum of all numerical values in the queue.  
+
+- `get_avg(queue, visualize=False)`  
+  Computes the average of all numerical elements in the queue.  
+
+- `reverse_queue(queue, inplace=False, visualize=False)`  
+  Reverses the order of elements in the queue.  
+
+- `sort_queue(queue, descending=False, inplace=False, visualize=False)`  
+  Sorts the queue in ascending order by default. Use `descending=True` for descending order.  
+
+- `clear_queue(queue, visualize=False)`  
+  Removes all elements from the queue.  
+
+- `contains(queue, item, visualize=False)`  
+  Checks if a specific item exists in the queue.  
 
 ---
 
