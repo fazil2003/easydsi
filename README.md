@@ -1,4 +1,4 @@
-# 📌 easydsi 2.0.0
+# 📌 easydsi 2.0.1
 
 <p align="center">
   <img src="./assets/logo-rounded.png" style="width: 40%"/>
