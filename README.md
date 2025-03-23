@@ -13,6 +13,7 @@
   - `min_heap()`
   - `max_heap()`
 - **Queue**
+- **Stack**
 - **Tree**
   - `binary_tree()`
   - `binary_search_tree()`
@@ -34,6 +35,36 @@
 - `get_elements()` - Return all elements.
 
 ---
+
+## Stack
+
+- `reverse_stack()`  
+  Reverses the order of elements in a stack.  
+
+- `sort_stack()`  
+  Sorts a stack in ascending order.  
+
+- `duplicate_stack()`  
+  Creates a duplicate of a stack without modifying the original.  
+
+- `sum_stack()`  
+  Computes the sum of all elements in a stack.  
+
+- `max_in_stack()`  
+  Finds the maximum value in a stack.  
+
+- `min_in_stack()`  
+  Finds the minimum value in a stack.  
+
+- `merge_stacks()`  
+  Merges two stacks into one, maintaining order.  
+
+- `is_balanced()`  
+  Checks if a given expression has balanced parentheses.  
+
+- `remove_duplicates()`  
+  Removes duplicate elements from a stack while maintaining order.  
+
 
 ## 📦 Queue
 ### 🛠️ Initialization
