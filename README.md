@@ -20,19 +20,48 @@
 
 ---
 
-## 🔢 Heap
+## 📦 Heap
 ### 🛠️ Initialization
-- **`heap()`** or **`heap([list])`** - Creates a min heap.
-- **`min_heap()`** or **`min_heap([list])`** - Creates a min heap.
-- **`max_heap()`** or **`max_heap([list])`** - Creates a max heap.
+- **`MinHeap()`** or **`MinHeap([list])`** - Creates a MinHeap.
+- **`MaxHeap()`** or **`MaxHeap([list])`** - Creates a MaxHeap.
+- **`Heap(data=None, max_heap=False)`** - Creates a generic heap that can be a MinHeap or MaxHeap.
 
-### ✨ Methods
-- `add(element)` - Add an element.
-- `remove()` - Remove an element.
-- `get_max(n)` - Get `n` maximum elements.
-- `get_min(n)` - Get `n` minimum elements.
-- `display()` - Display all elements.
-- `get_elements()` - Return all elements.
+This module provides utility functions for performing various operations on a `Heap` object, including retrieving statistics, sorting, merging, and clearing the heap.
+
+### 📌 Methods and Descriptions
+
+- `heapify_list(data, max_heap=False)`  
+  Converts a list into a **MinHeap** or **MaxHeap**.  
+
+- `merge_heaps(heap1, heap2, max_heap=False)`  
+  Merges two heaps into a new **MinHeap** or **MaxHeap**.  
+
+- `is_heap_sorted(heap, max_heap=False)`  
+  Checks if a given heap is sorted.  
+
+- `get_top_n(heap, n=1)`  
+  Retrieves the top `n` elements from a **MinHeap** or **MaxHeap**.  
+
+- `heap_sort(data, descending=False)`  
+  Sorts a list using **Heap Sort**.  
+
+- `contains(heap, element)`  
+  Checks if an element exists in the heap.  
+
+- `clear_heap(heap)`  
+  Removes all elements from the heap.  
+
+- `size(heap)`  
+  Returns the number of elements in the heap.  
+
+- `sum_heap(heap)`  
+  Computes the sum of all elements in the heap.  
+
+- `max_in_heap(heap)`  
+  Returns the **maximum** element in the heap.  
+
+- `min_in_heap(heap)`  
+  Returns the **minimum** element in the heap.  
 
 ---
 
