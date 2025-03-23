@@ -1,22 +1,22 @@
 # 📌 easydsi 1.2.2
 
 <p align="center">
-  <img src="./assets/logo-rounded.png" style='width: 40%'/>
+  <img src="./assets/logo-rounded.png" style="width: 40%"/>
 </p>
 
-🚀 **easydsi** is a Python library designed to simplify data structures and algorithms, allowing users to focus on coding without worrying about implementation details.
+🚀 **easydsi** is a Python library designed to simplify **Data Structures and Algorithms (DSA)**, allowing users to focus on coding without worrying about implementation details.
 
 ---
 
 ## 📂 Features
 - **Heap**
-  - `min_heap()`
-  - `max_heap()`
+  - `MinHeap()`
+  - `MaxHeap()`
 - **Queue**
 - **Stack**
 - **Tree**
-  - `binary_tree()`
-  - `binary_search_tree()`
+  - `BinaryTree()`
+  - `BinarySearchTree()`
 
 ---
 
@@ -30,72 +30,75 @@ This module provides utility functions for performing various operations on a `H
 
 ### 📌 Methods and Descriptions
 
-- `heapify_list(data, max_heap=False)`  
+- **`heapify_list(data, max_heap=False)`**  
   Converts a list into a **MinHeap** or **MaxHeap**.  
 
-- `merge_heaps(heap1, heap2, max_heap=False)`  
+- **`merge_heaps(heap1, heap2, max_heap=False)`**  
   Merges two heaps into a new **MinHeap** or **MaxHeap**.  
 
-- `is_heap_sorted(heap, max_heap=False)`  
+- **`is_heap_sorted(heap, max_heap=False)`**  
   Checks if a given heap is sorted.  
 
-- `get_top_n(heap, n=1)`  
+- **`get_top_n(heap, n=1)`**  
   Retrieves the top `n` elements from a **MinHeap** or **MaxHeap**.  
 
-- `heap_sort(data, descending=False)`  
+- **`heap_sort(data, descending=False)`**  
   Sorts a list using **Heap Sort**.  
 
-- `contains(heap, element)`  
+- **`contains(heap, element)`**  
   Checks if an element exists in the heap.  
 
-- `clear_heap(heap)`  
+- **`clear_heap(heap)`**  
   Removes all elements from the heap.  
 
-- `size(heap)`  
+- **`size(heap)`**  
   Returns the number of elements in the heap.  
 
-- `sum_heap(heap)`  
+- **`sum_heap(heap)`**  
   Computes the sum of all elements in the heap.  
 
-- `max_in_heap(heap)`  
+- **`max_in_heap(heap)`**  
   Returns the **maximum** element in the heap.  
 
-- `min_in_heap(heap)`  
+- **`min_in_heap(heap)`**  
   Returns the **minimum** element in the heap.  
 
 ---
 
-## Stack
+## 📦 Stack
 ### 🛠️ Initialization
 - **`Stack()`** - Creates a stack.
 
-- `reverse_stack()`  
+### 📌 Methods and Descriptions
+
+- **`reverse_stack()`**  
   Reverses the order of elements in a stack.  
 
-- `sort_stack()`  
+- **`sort_stack()`**  
   Sorts a stack in ascending order.  
 
-- `duplicate_stack()`  
+- **`duplicate_stack()`**  
   Creates a duplicate of a stack without modifying the original.  
 
-- `sum_stack()`  
+- **`sum_stack()`**  
   Computes the sum of all elements in a stack.  
 
-- `max_in_stack()`  
+- **`max_in_stack()`**  
   Finds the maximum value in a stack.  
 
-- `min_in_stack()`  
+- **`min_in_stack()`**  
   Finds the minimum value in a stack.  
 
-- `merge_stacks()`  
+- **`merge_stacks()`**  
   Merges two stacks into one, maintaining order.  
 
-- `is_balanced()`  
+- **`is_balanced()`**  
   Checks if a given expression has balanced parentheses.  
 
-- `remove_duplicates()`  
+- **`remove_duplicates()`**  
   Removes duplicate elements from a stack while maintaining order.  
 
+---
 
 ## 📦 Queue
 ### 🛠️ Initialization
@@ -105,51 +108,73 @@ This module provides utility functions for performing various operations on a `Q
 
 ### 📌 Methods and Descriptions
 
-- `get_max(queue, visualize=False)`  
+- **`get_max(queue, visualize=False)`**  
   Returns the maximum numerical value in the queue.  
 
-- `get_min(queue, visualize=False)`  
+- **`get_min(queue, visualize=False)`**  
   Returns the minimum numerical value in the queue.  
 
-- `get_sum(queue, visualize=False)`  
+- **`get_sum(queue, visualize=False)`**  
   Computes the sum of all numerical values in the queue.  
 
-- `get_avg(queue, visualize=False)`  
+- **`get_avg(queue, visualize=False)`**  
   Computes the average of all numerical elements in the queue.  
 
-- `reverse_queue(queue, inplace=False, visualize=False)`  
+- **`reverse_queue(queue, inplace=False, visualize=False)`**  
   Reverses the order of elements in the queue.  
 
-- `sort_queue(queue, descending=False, inplace=False, visualize=False)`  
+- **`sort_queue(queue, descending=False, inplace=False, visualize=False)`**  
   Sorts the queue in ascending order by default. Use `descending=True` for descending order.  
 
-- `clear_queue(queue, visualize=False)`  
+- **`clear_queue(queue, visualize=False)`**  
   Removes all elements from the queue.  
 
-- `contains(queue, item, visualize=False)`  
+- **`contains(queue, item, visualize=False)`**  
   Checks if a specific item exists in the queue.  
 
 ---
 
-## 🌳 Tree
-### 🛠️ Initialization
-- **`tree()`** or **`tree([list])`** - Creates a binary tree.
-- **`binary_tree()`** or **`binary_tree([list])`** - Creates a binary tree.
-- **`binary_search_tree()`** or **`binary_search_tree([list])`** - Creates a binary search tree.
+# 🌳 Tree  
+## 🛠️ Initialization  
+- **`BinaryTree()`** or **`BinaryTree(root_value)`** - Creates a Binary Tree with an optional root value.  
+- **`BinarySearchTree()`** or **`BinarySearchTree(root_value)`** - Creates a Binary Search Tree with an optional root value.  
 
-### ✨ Methods
-- `add(element)` - Add an element.
-- `remove(value)` - Delete an element with a specific value.
-- `get_elements()` - Return all elements.
-- `get_nodes()` - Return all nodes.
-- `display()` - Display all elements.
-- `inorder()` - Get in-order traversal.
-- `preorder()` - Get pre-order traversal.
-- `postorder()` - Get post-order traversal.
-- `levelorder()` - Get level-order traversal.
-- `get_size()` - Get total number of elements.
-- `get_height()` - Get the tree's height.
-- `get_properties()` - Get tree properties.
+This module provides utility functions for performing various operations on a `Tree` object, including retrieving statistics, searching, traversing, and modifying the tree.
+
+## 📌 Methods and Descriptions  
+
+- **`contains(tree, value)`**  
+  Checks if a tree contains a specific value.  
+
+- **`sum_tree(tree)`**  
+  Returns the sum of all elements in the tree.  
+
+- **`max_in_tree(tree)`**  
+  Returns the **maximum** value in the tree.  
+
+- **`min_in_tree(tree)`**  
+  Returns the **minimum** value in the tree.  
+
+- **`count_nodes(tree)`**  
+  Returns the total number of nodes in the tree.  
+
+- **`count_leaves(tree)`**  
+  Returns the number of leaf nodes in the tree.  
+
+- **`get_height(tree)`**  
+  Returns the height of the tree.  
+
+- **`inorder(tree)`**  
+  Returns the **in-order traversal** of the tree (**Left, Root, Right**).  
+
+- **`preorder(tree)`**  
+  Returns the **pre-order traversal** of the tree (**Root, Left, Right**).  
+
+- **`postorder(tree)`**  
+  Returns the **post-order traversal** of the tree (**Left, Right, Root**).  
+
+- **`levelorder(tree)`**  
+  Returns the **level-order traversal** of the tree (**Breadth-First Traversal**).  
 
 ---
 
