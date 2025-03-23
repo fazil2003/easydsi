@@ -37,6 +37,8 @@
 ---
 
 ## Stack
+### 🛠️ Initialization
+- **`Stack()`** - Creates a stack.
 
 - `reverse_stack()`  
   Reverses the order of elements in a stack.  
@@ -68,7 +70,7 @@
 
 ## 📦 Queue
 ### 🛠️ Initialization
-- **`queue()`** or **`queue([list])`** - Creates a queue.
+- **`Queue()`** or **`Queue([list])`** - Creates a queue.
 
 This module provides utility functions for performing various operations on a `Queue` object, including retrieving statistics, sorting, reversing, and clearing the queue.
 
