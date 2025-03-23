@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "easydsi"
+version = "1.2.2"
+description = "A Python library that helps developers implement data structures & algorithms easily."
+readme = "README.md"
+authors = [
+    { name = "Mohamed Fazil", email = "mohamedfazil463@gmail.com" }
+]
+license = { text = "MIT" }
+requires-python = ">=3.6"
+dependencies = [
+    "multipledispatch==0.6.0",
+    "binarytree==6.5.1"
+]
+
+[project.urls]
+Homepage = "https://github.com/fazil2003/easydsi"
+Documentation = "https://github.com/fazil2003/easydsi/wiki"
+Source = "https://github.com/fazil2003/easydsi"
+Issues = "https://github.com/fazil2003/easydsi/issues"
+
+[tool.setuptools]
+packages = ["easydsi"]
+
+[tool.setuptools.package-data]
+easydsi = ["*.txt", "*.md"]  # Ensures additional files are included in package
+
+[tool.setuptools.dynamic]
+version = {attr = "easydsi.__version__"}  # Alternative to hardcoded versioning

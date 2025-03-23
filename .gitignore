@@ -1,4 +1,10 @@
+build/
 dist/
 easydsi.egg-info/
+easydsi/__pycache__/
+easydsi/heap/__pycache__/
+easydsi/linked_list/__pycache__/
+easydsi/queue/__pycache__/
+easydsi/tree/__pycache__/
 
 test.py
