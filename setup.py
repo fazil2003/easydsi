@@ -11,7 +11,7 @@ def read_file(filename):
 
 # Package metadata
 PACKAGE_NAME = "easydsi"
-VERSION = "1.2.2"  # Consider keeping versioning in a single source (e.g., __version__.py)
+VERSION = "2.0.0"  # Consider keeping versioning in a single source (e.g., __version__.py)
 DESCRIPTION = (
     "A Python library that helps developers implement data structures & algorithms easily "
     "without having to build everything from scratch."
