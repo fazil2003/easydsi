@@ -189,38 +189,43 @@ pip install easydsi
 ## 🚀 Quick Start
 Import the library into your project:
 ```python
-import easydsi as dsi
+from easydsi.tree.binary_tree import BinaryTree, BinarySearchTree
+from easydsi.tree.tree_utils import max_in_tree, sum_tree
 ```
 
-### 🎯 Working with Queue
-#### 🔹 Initialize a queue
+### 🎯 Working with Tree
+#### 🔹 Initialize a tree
 ```python
-queue = dsi.queue([1, 2, 3])
-queue.display()
+bt = BinaryTree([3, 5, 1, 7, 2])
+print(bt)
 ```
 **Output:**
-```
-[1, 2, 3]
+```sh
+    __3
+   /   \
+  5     1
+ / \
+7   2
 ```
 
-#### 🔹 Add an element
+#### 🔹 Get maximum value in Binary Search Tree
 ```python
-queue.add(4)
-queue.display()
+bst = BinarySearchTree([10, 5, 15, 2, 7])
+print(max_in_tree(bst))
 ```
 **Output:**
-```
-[1, 2, 3, 4]
+```sh
+15
 ```
 
-#### 🔹 Remove an element
+#### 🔹 Get all elements after adding 6
 ```python
-queue.remove()
-queue.display()
+bt.add(6)
+print(bt.get_elements())
 ```
 **Output:**
-```
-[2, 3, 4]
+```sh
+[3, 5, 1, 7, 2, 6]
 ```
 
 ---

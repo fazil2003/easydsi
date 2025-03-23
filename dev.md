@@ -16,7 +16,7 @@ This generates a `dist/` folder containing `.tar.gz` and `.whl` files.
 ### 🧪 Test Installation Locally
 Before publishing, test the package by installing it locally:
 ```sh
-pip install ./dist/easydsi-2.0.0-py3-none-any.whl
+pip install ./dist/easydsi-2.0.1-py3-none-any.whl
 ```
 
 ### 🧪 Run the unit tests
@@ -28,7 +28,7 @@ python -m unittest discover tests
 Ensure the package is installed correctly:
 ```python
 import easydsi
-print(easydsi.__version__)  # Should print '2.0.0'
+print(easydsi.__version__)  # Should print '2.0.1'
 ```
 
 ### 🚀 Upload to TestPyPI (For Testing)

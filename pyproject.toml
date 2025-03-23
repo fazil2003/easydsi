@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "easydsi"
-version = "2.0.0"
+version = "2.0.1"
 description = "A Python library that helps developers implement data structures & algorithms easily."
 readme = "README.md"
 authors = [

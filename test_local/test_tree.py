@@ -3,6 +3,7 @@ from easydsi.tree.tree_utils import max_in_tree, sum_tree
 
 bt = BinaryTree([3, 5, 1, 7, 2])
 print(bt.inorder())  # Get inorder traversal
+print(bt)
 
 bst = BinarySearchTree([10, 5, 15, 2, 7])
 print(max_in_tree(bst))  # Get max value in BST
