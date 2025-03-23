@@ -1,9 +1,9 @@
 # easyDSI 1.2.1
 
 <p align="center">
-  <img src="https://aloask.com/assets/images/icon_easydsi.png" style='width: 20%;'/>
+  <img src="./assets/logo.png" style='width: 20%; background: white; border-radius: 200px; padding: 10px 20px 10px 20px;'/>
 </p>
-<br /><br />
+<br />
 
 Python Library makes it easy for users to code and run data structures & algorithms without having to summarize everything.
 <br /><br />
@@ -115,20 +115,7 @@ queue.display()
 
 <br />
 
-<!-- ## How to build and upload to PyPI
-### Source Distribution
-```
-pip install setuptools twine
-python setup.py sdist
-twine upload --repository-url https://upload.pypi.org/legacy/ dist/*
-```
-### Wheel File
-```
-pip install setuptools wheel
-python setup.py bdist_wheel
-twine upload dist/*
-```
-
-<br /> -->
+[![PyPI Downloads](https://static.pepy.tech/badge/easydsi)](https://pepy.tech/projects/easydsi)
+<br />
 
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Ffazil2003%2Feasydsi&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
