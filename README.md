@@ -1,10 +1,10 @@
-# 📌 easyDSI 1.2.1
+# 📌 easydsi 1.2.2
 
 <p align="center">
-  <img src="./assets/logo.png" style='width: 20%; background: white; border-radius: 200px; padding: 10px 20px 10px 20px;'/>
+  <img src="./assets/logo-rounded.png" style='width: 20%'/>
 </p>
 
-🚀 **easyDSI** is a Python library designed to simplify data structures and algorithms, allowing users to focus on coding without worrying about implementation details.
+🚀 **easydsi** is a Python library designed to simplify data structures and algorithms, allowing users to focus on coding without worrying about implementation details.
 
 ---
 
